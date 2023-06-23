@@ -34,7 +34,7 @@ export class LoginComponent {
   result.subscribe((resp:any)=>{
     if(resp){
   localStorage.setItem("currentUser",resp.currentUser)
-  // localStorage.setItem("currentAcno",resp.currentAcno)
+  localStorage.setItem("currentAcno",resp.currentAcno)
   // localStorage.setItem ("token",JSON.stringify(resp.token))
   alert(resp.message)
   this.r.navigateByUrl("Main")
