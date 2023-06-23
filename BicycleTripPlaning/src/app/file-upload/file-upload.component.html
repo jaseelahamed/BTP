@@ -1,0 +1,32 @@
+<!-- <h2>Image Upload</h2>
+<input type="file" (change)="onFileSelected($event)">
+<button (click)="uploadImage()">Upload</button>
+ -->
+ <app-nav></app-nav>
+
+ <div class="img"></div>
+ 
+<div class="form-container">
+    <!-- <form> -->
+      <div class="form-group">
+        <label for="image">Upload Your Trip Photo:</label>
+        <input id="btn" type="file" (change)="onFileSelected($event)">
+        <!-- <input type="file" id="image" accept="image/*" class="file-input" (change)="onFileSelected($event)"> -->
+        <!-- <div class="image-preview">
+          <img id="preview" src="#" alt="Preview">
+        </div> -->
+      </div>
+      <form [formGroup]="lgform" (ngSubmit)="clicked()">
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" rows="4"  formControlName="dp">
+         
+        </textarea>
+      </div>
+    <!-- </form> -->
+      <button id="btn" (click)="uploadImage()">Upload</button>
+      
+
+      <!-- <button type="submit" class="submit-button"  (click)="uploadImage()">Submit</button> -->
+    </form>
+  </div> 

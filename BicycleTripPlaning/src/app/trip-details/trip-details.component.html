@@ -1,0 +1,112 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- <a class="navbar-brand" routerLink="/">TripPlanner</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="nav1">
+    <ul  class="navbar-nav ml-auto">
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/">Home</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/st"> Add Blog</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/tdv"> Blog</a>
+      </li> -->
+     
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/destinations">Organaization</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/find">Find</a>
+      </li> -->
+     
+    </ul>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+ 
+        <!-- <li class="nav-item">
+        <a class="nav-link" routerLink="/lg">Login</a>
+      </li> -->
+      <a class="nav-link" routerLink="/st">
+      <button class="sign-up-button"> Add Blog</button></a>
+      
+    </ul>
+  </div>
+</nav>
+
+<!-- trip-details.component.html -->
+<!-- <h2>Trip Details</h2>
+<div *ngFor="let trip of trips">
+  <h3>{{ trip.title }}</h3>
+  <img [src]="'/uploads/' + trip.imageUrl" alt="Trip Image">
+</div> -->
+<!-- <h2>Trip Details</h2> -->
+
+
+  <!-- <div id="blog" *ngFor="let trip of trips" >
+    <div class="card bg-dark text-white"> -->
+    <!-- <img [src]="'/uploads/' + trip.imageUrl" alt="Trip Image"> -->
+  <!-- <img [src]="'http://127.0.0.1:3000/uploads/' + trip.imageUrl" class="card-img" alt="Stony Beach"/>
+  <h3>{{ trip.title }}</h3>
+  <p class="card-text">
+   {{trip.description}}
+  </p>
+  <p class="card-text">Last updated 3 mins ago</p>
+  <div class="card-img-overlay"> -->
+    <!-- <h5 class="card-title">Card title</h5> -->
+   
+  <!-- </div>
+</div>
+</div>
+ -->
+
+
+
+
+<!-- sdfghjkl;zxcvbnm,./ -->
+
+
+
+<!-- card
+-->
+<h2>Trip Details</h2>
+<br><br><br><br><br>
+<link rel="stylesheet" href="">
+
+<div class="section_our_solution" *ngFor="let trip of trips">
+ <div class="row">
+   <div class="col-lg-12 col-md-12 col-sm-12">
+     <div class="our_solution_category">
+       <div class="solution_cards_box">
+         <div class="solution_card">
+           <div class="hover_color_bubble"></div>
+           <div class="so_top_icon">
+             <img id="img1" src="../../assets/img21.png" alt="">
+           
+           </div>
+           <div class="solu_title">
+             <h3>Blog</h3>
+             <p>
+              {{trip.description}}
+             </p>
+           </div>
+           <img id="img" [src]="'http://127.0.0.1:3000/uploads/' + trip.imageUrl" class="card-img" alt="Stony Beach"/>
+           <div class="solu_description">
+             <p>
+              {{trip.description}}
+             </p>
+             <!-- <button type="button" class="read_more_btn"> <a id="link" class="nav-link" routerLink="/club"> Read More</a></button> -->
+           </div>
+         </div>
+      
+       </div>
+       <!--  -->
+     </div>
+   </div>
+ </div>
+</div>

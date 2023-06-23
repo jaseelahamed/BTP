@@ -1,0 +1,56 @@
+<app-nav></app-nav>
+<div class="row mb-30">
+    <!-- <div class="col-lg-2">
+        <div class="user">
+            <div class="title">
+                <img src="../../assets/anas.jpg" alt="img">
+                <h5>Anas muhammed</h5>
+                <p>Travel Guide</p>
+            </div>
+            <ul>
+                <li>Photo Grapher &amp; Cyclist</li>
+                <li>Guide in Mallu Sing Manali</li>
+            </ul>
+        </div>
+    </div> -->    <form class="mx-1 mx-md-4" [formGroup]="regform" (ngSubmit)="clicked()">
+    <div class="col-lg-10">
+        <div class="event-list-content fix">
+            
+            <ul data-animation="fadeInUp animated" data-delay=".2s" style="animation-delay: 0.2s;" class="">
+                <div class="form-outline flex-fill mb-0">
+                    <label class="form-label" for="form3Example3c">Place</label>
+                    <input type="text" id="form3Example3c" class="form-control" formControlName="place"/>
+                   
+                  </div>
+                <div class="form-outline flex-fill mb-0">
+                    <label class="form-label" for="form3Example3c">Time</label>
+                    <input type="time" id="form3Example3c" class="form-control" formControlName="time"/>
+                    
+                  </div>
+                <div class="form-outline flex-fill mb-0">
+                    <label class="form-label" for="form3Example3c">Title</label>
+                    <input type="text" id="form3Example3c" class="form-control" formControlName="title"/>
+                   
+                  </div>
+                <div class="form-outline flex-fill mb-0">
+                    <label class="form-label" for="form3Example3c">Content</label>
+                    <input type="text" id="form3Example3c" class="form-control" formControlName="content"/>
+                   
+                  </div>
+                <!-- <li>Guide For Safe Ride</li>
+                <li>9.30 - 10.30 AM Tirur</li> -->
+            </ul>
+            
+            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                <button id="f" type="submit" class="btn btn- btn-lg">ADD</button><br>
+               
+              </div>
+            <!-- <h2>Kerala Cycling Challenge 2023</h2>
+            <p>Your safety is our top priority. We provide a secure and enjoyable cycling experience with experienced guides, well-maintained bicycles, and adherence to safety protocols. Ride confidently as we navigate carefully selected routes, ensuring your peace of mind throughout your cycling adventure</p>
+            <a href="#" class="btn mt-20 mr-10"><i class="far fa-ticket-alt"></i> Buy Ticket</a> -->
+            <!-- <a href="#" class="btn mt-20">Read More</a> -->
+            <div class="crical"><i class="fal fa-video"></i> </div>
+        </div>
+    </div>
+</form>
+</div>
